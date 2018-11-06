@@ -71,7 +71,7 @@ Second element is a list of playfield data delta. Length is varying from 0 byte 
 
 So, after having drawn a line group, we calculate the playfield data with some EORs, and we are ready to display the next one.
 
-<h2how to="" display="" the="" second="" part="" of="" screen<="" h2="">
+## How to display the second part of screen
 
 Well, remember the first byte of the delta ? The second "link" which permits to go from current playfield data to previous. We use it to replay the EORs we have done until reaching the end of the deltas, in reverse order. Hence, we end with the initial playfield data and drawing the whole frame is finished.
 

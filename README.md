@@ -1,6 +1,10 @@
 # Realtime Raycasting on the Atari VCS
 
-Due to popular demand, I decided to write a little bit of explanations on how I implemented Wolf3D raycasting algorithm on the stock Atari VCS console.
+![Alpha Cucks demo screenshot](/demo-raycaster/raycast.png?raw=true "Raycasting in action")
+
+Due to popular demand after the Alpha Cucks demo release at SV2018, I decided to give some details on how I implemented Wolf3D raycasting algorithm on the stock Atari VCS console.
+
+You can find the demo [https://demozoo.org/productions/195197/](here) on Demozoo and Pouet.
 
 You can find a C++ program in directory raycaster-study which permitted to get a working POC of the expected VCS result using SDL library on Mac, using "8bit compilable" code, and debuggable in a C++ compiler. build.sh compiles and executable is "play". I let the play binary in the folder but you might need to brew install sdl to run it if you don't have SDL. It is based on source code from Lode Vandevenne and his tutorials about raycasting. You can find them here: [https://lodev.org/cgtutor/raycasting.html](https://lodev.org/cgtutor/raycasting.html)
 

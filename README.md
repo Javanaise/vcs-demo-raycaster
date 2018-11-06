@@ -71,7 +71,7 @@ Each delta consist of two elements.
 
 First element is one byte. In that byte, 4 bits are used to indicate if PF0, PF1, PF2 and PF3 are changing value or not, from current line group to next. And 4 bits are used to indicate if PF0, PF1, PF2 and PF3 are changing value or not, from current line group to previous. This is the double link.
 
-Second element is a list of playfield data delta. Length is varying from 0 byte to 4 bytes. Each delta is a value to EOR (Exclusive OR) with the current value of PF0, PF1, PF2 or PF3 to get its next value.
+Second element is a list of playfield data delta. Length is varying from 0 byte to 4 bytes (we store a delta only if its value is different from zero). Each delta is a value to EOR (Exclusive OR) with the current value of PF0, PF1, PF2 or PF3 to get its next value.
 
 So, after having drawn a line group, we calculate the playfield data with some EORs, and we are ready to display the next one.
 

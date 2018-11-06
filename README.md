@@ -111,7 +111,7 @@ In the final demo, I needed more speed for that part, so at the cost of silly da
         LDA PFOut54,y           ; A = bit 5: if column2Height == 15 then 1 else 0; bit 4: if column3Height == 15 then 1 else 0; other bits: 1
         AXS #0                  ; X = X & A
         LDA IncrementHeight,y
-        STA raycastoutput+1\.    ; overwrites raycast output: if column2Height < 15, column2Height++; if column3Height < 15, column3Height++;
+        STA raycastoutput+1     ; overwrites raycast output: if column2Height < 15, column2Height++; if column3Height < 15, column3Height++;
 
         LDY raycastoutput+2     ; load column4Height and column5Height
         LDA PFOut32,y           ; A = bit 3: if column4Height == 15 then 1 else 0; bit 2: if column5Height == 15 then 1 else 0; other bits: 1

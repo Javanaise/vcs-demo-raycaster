@@ -6,7 +6,7 @@ You can find a C++ program in directory raycaster-study which permitted to get a
 
 An interactive VCS demo is in directory demo-raycaster. There is a script build.sh (for Mac) which permits to launch it directly. You can use the joypad to move in the world.
 
-I will not explain here how the raycast algorithm works, as there are already some good tutorials on internet. I will just give some credits to Richard Wilson, who has made a crazy good POC of Wolf3D on the Amstrad CPC 6128, and to the creators of the original Wolfenstein3d PC DOS game, who open sourced their source code, and without who I would not have been able to implement that algorithm. I just updated a bit the algorithm to need only multiplications of one kind: 16bit (unsigned 8bit value with 8bit fract) * unsigned 8bit fract multiplicand -> 16bit result (unsigned 8bit value with 8bit fract).
+I will not explain here how the raycast algorithm works, as there are already some good tutorials on internet. I will just give some credits to Richard Wilson, who has made a crazy good POC of Wolf3D on the Amstrad CPC 6128, and to the creators of the original Wolfenstein3d PC DOS game, who open sourced their source code, and without who I would not have been able to implement that algorithm. I updated the algorithm to only need one kind of multiplications: 16bit (unsigned 8bit value with an 8bit fract) * unsigned 8bit fract multiplicand -> 16bit result (unsigned 8bit value with an 8bit fract).
 
 Also, for the display of the raycasting, I credit Joe Musashi from AtariAge forum, it was his idea to simulate horizontal and vertical walls of the map, with two different colors, by displaying some playfield data with two different colors in alternance. I reused this idea; I think this method looks nice.
 

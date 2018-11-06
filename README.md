@@ -8,7 +8,7 @@ An interactive VCS demo is in directory demo-raycaster. There is a script build.
 
 I will not explain here how the raycast algorithm works, as there are already some good tutorials on internet. I will just give some credits to Richard Wilson, who has made a crazy good POC of Wolf3D on the Amstrad CPC 6128, and to the creators of the original Wolfenstein3d PC DOS game, who open sourced their source code, and without who I would not have been able to implement that algorithm. I updated the algorithm to only need one kind of multiplications: 16bit (unsigned 8bit value with an 8bit fract) * unsigned 8bit fract multiplicand -> 16bit result (unsigned 8bit value with an 8bit fract).
 
-I would like to credit Joe Musashi from the AtariAge forum for the raycasting display idea: Horizontal and vertical walls of the map were displayed with two different colors, using playfield data with two different colors in alternance. Thanks for the idea Joe; I think this looks nice.
+I would like to credit Joe Musashi from the AtariAge forum for the raycasting display idea: Horizontal and vertical walls of the map were displayed by alterning two colors, using playfield data. Thanks for the idea Joe; I think this looks nice.
 
 ## How the raycasting result is stored
 

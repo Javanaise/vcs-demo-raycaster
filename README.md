@@ -128,7 +128,7 @@ In the final demo, I needed more speed for that part, so at the cost of silly da
         STX TempPF0             ; finished generating 8 bits of playfield
 </pre>
 
-And that's it I think. I hoped this reading was interesting and enjoyable as much as it was for me to code that effect on the VCS.
+And that's it I think. I hope this reading was interesting and enjoyable as much as it was for me to code that effect on the VCS.
 
 Kezax/Dentifrice
 
